@@ -29,10 +29,8 @@ jobs:
         uses: matlab-actions/setup-matlab@v1
 
       # Runs a set of commands using the runners shell
-      - name: Run all tests
+      - name: Run tests and generate artifacts
         uses: matlab-actions/run-tests@v1
-        with:
-          source-folder: code
 
       # As an alternative to run-tests, you can use run-command to execute a MATLAB script, function, or statement.
       #- name: Run all tests
